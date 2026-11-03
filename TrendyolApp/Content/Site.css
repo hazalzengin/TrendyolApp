@@ -1,0 +1,113 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+/* ---------- Trendyol Fiyat Takip ---------- */
+.navbar-inverse { background: #f27a1a; border-color: #e06c10; }
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a { color: #fff; }
+.body-content { padding-top: 20px; }
+
+.stats { margin-bottom: 15px; }
+.stat { background: #fff; border: 1px solid #e6e6e6; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.stat-value { display: block; font-size: 22px; font-weight: 700; }
+.stat-label { color: #777; font-size: 12px; }
+.stat-lowest .stat-value { color: #e06c10; }
+.stat-drop .stat-value { color: #2a7fc1; }
+.stat-target .stat-value { color: #2e9e5b; }
+
+textarea.url-input { max-width: none; }
+.add-actions { margin-top: 10px; }
+.add-actions .btn { margin-right: 6px; }
+.import-help { margin-bottom: 12px; }
+.bookmarklet { cursor: move; }
+
+.category-bar { margin-bottom: 12px; }
+.category-pills .btn { margin: 0 4px 6px 0; }
+.category-pills .badge { font-size: 10px; background: rgba(0,0,0,.15); }
+.category-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.category-tools #searchBox { max-width: 320px; flex: 1 1 200px; }
+.bulk-category { display: inline-flex; gap: 4px; }
+.bulk-category .form-control { width: 170px; }
+.top-discounted-list { margin: 8px 0; padding-left: 30px; }
+.top-discounted-list li { margin: 3px 0; }
+.discount-count { font-size: 12px; font-weight: 600; color: #f27a1a; margin: 2px 0 4px; }
+.product-category { margin-bottom: 4px; }
+.category-box { margin-top: 6px; }
+.toolbar { margin-bottom: 15px; }
+.filter-group { margin-bottom: 8px; }
+.sort-box select { display: inline-block; width: auto; }
+
+.empty-state { text-align: center; padding: 40px 10px; color: #777; }
+
+.product-card { background: #fff; border: 1px solid #e6e6e6; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
+.product-card.is-lowest { border-color: #f27a1a; box-shadow: 0 0 0 1px #f27a1a; }
+.product-card.is-target { border-color: #2e9e5b; box-shadow: 0 0 0 1px #2e9e5b; }
+.product-image { display: block; position: relative; height: 200px; background: #fafafa; text-align: center; }
+.product-image img { max-height: 200px; max-width: 100%; }
+.product-image .no-image { line-height: 200px; color: #aaa; }
+.product-image .badges { position: absolute; left: 8px; top: 8px; text-align: left; }
+.product-image .badges .label { display: inline-block; margin-bottom: 3px; }
+.product-body { padding: 10px 12px; }
+.product-name { font-size: 14px; height: 40px; overflow: hidden; margin: 0 0 8px; line-height: 20px; }
+.product-name a { color: #333; }
+.price-now { font-size: 20px; font-weight: 700; color: #f27a1a; margin-bottom: 6px; }
+.price-now s { font-size: 13px; color: #999; font-weight: 400; margin-left: 4px; }
+.change { font-size: 12px; font-weight: 600; margin-left: 4px; }
+.change.down { color: #2e9e5b; }
+.change.up { color: #d9534f; }
+.price-stats { width: 100%; font-size: 12px; margin-bottom: 8px; }
+.price-stats th { color: #777; font-weight: 400; padding: 1px 0; }
+.price-stats td { text-align: right; }
+.price-stats td.lowest { color: #e06c10; font-weight: 600; }
+.target-box { margin-bottom: 8px; }
+.target-box input { max-width: none; }
+.card-actions { font-size: 12px; display: flex; justify-content: space-between; }
+.checked { margin-top: 6px; }
+
+.detail-image { max-width: 100%; border: 1px solid #eee; border-radius: 8px; }
+.chart-box { position: relative; height: 320px; margin-bottom: 20px; }
+.history-table { max-width: 600px; }
+
+.topic-box { margin: 6px 0; font-size: 16px; }
+.topic-box code { user-select: all; }
+.settings-form .form-control { max-width: none; }
+.manual-steps { margin: 6px 0; }
+textarea.bookmarklet-code { max-width: none; font-family: monospace; font-size: 11px; }
+
+.progress-box { margin-bottom: 15px; }
+.progress-box .progress { height: 8px; margin: 4px 0 0; }
+.batch-table { margin: 0; }
+.batch-table td { vertical-align: middle !important; }
+.filter-group .badge { font-size: 10px; background: rgba(0,0,0,.15); }
+.basket-tag { display: inline-block; font-size: 11px; font-weight: 600; color: #fff; background: #2e9e5b; border-radius: 3px; padding: 1px 5px; vertical-align: middle; }
+.discount-note { font-size: 12px; font-weight: 600; margin: 2px 0 6px; }
+.discount-note.fake { color: #c9302c; }
+.discount-note.real { color: #2e9e5b; }
